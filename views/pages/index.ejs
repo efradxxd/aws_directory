@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE HTML>
+<!--
+            Arcana by HTML5 UP
+            html5up.net | @ajlkn
+            Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+        -->
+<html>
+
+<head>
+    <title>Team 1 Directory</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="/css/main.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
+</head>
+
+<body>
+    <div id="page-wrapper">
+        <!-- Header -->
+        <div id="header">
+            <nav id="nav">
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+            <!-- Logo -->
+            <h1 id="g-tec-logo"><a href="index.html" id="logo">Team 1 <em>by G-TEC</em></a></h1>
+
+            <!-- Nav -->
+
+
+        </div>
+
+        <!-- Gigantic Heading -->
+        <section class="wrapper style2">
+            <div class="container">
+                <header class="major">
+                    <h2>Who are the team 1?</h2>
+                    <ul>
+                        <% teamMembers.forEach(function(member) { %>
+                        <li>
+                            <%= member.uid %> -
+                            <%= member.name %>
+                        </li>
+                        <% }); %>
+
+                    </ul>
+                </header>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <div id="footer">
+            <!-- Icons -->
+            <ul class="icons">
+                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+            </ul>
+
+            <!-- Copyright -->
+            <div class="copyright">
+                <ul class="menu">
+                    <li>&copy; G-Tec. All rights reserved</li>
+                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.dropotron.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
+    <script src="/js/main.js"></script>
+
+</body>
+
+</html>
