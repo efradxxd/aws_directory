@@ -23,9 +23,30 @@
 		padding-top: 0px !important;
 	}
 
+	#content-directory {
+		margin-top: 0 !important;
+		padding-top: 0px !important;
+	}
+
 	#g-tec-logo {
 		padding-top: 25px !important;
 		margin-top: 25px !important;
+	}
+	.header-table {
+		font-weight: bold !important;
+	}
+	.prof-img {
+		height: 40px;
+		width: 40px;
+		border-radius: 50%;
+	}
+
+	#member-table {
+		border-collapse: collapse; /* Collapse borders */
+		width: 100%; /* Full-width */
+		border: 1px solid #ddd; /* Add a grey border */
+		font-size: 18px; /* Increase font-size */
+		padding: 12px;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {

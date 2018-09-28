@@ -17,7 +17,8 @@ request.get('https://uhmoxvk5s0.execute-api.us-east-1.amazonaws.com/dev/Director
     teamMembers = JSON.parse(body);
     teamMembers = teamMembers.reverse();
 
-})
+});
+
 
 app.get('/', function(req, res) {
     res.render('pages/index', {

@@ -28,7 +28,7 @@
                 </ul>
             </nav>
             <!-- Logo -->
-            <h1 id="g-tec-logo"><a href="index.html" id="logo">Team 1 <em>by G-TEC</em></a></h1>
+            <h1 id="g-tec-logo"><a href="index.html" id="logo">Cloud Computing <em>by G-TEC</em></a></h1>
 
             <!-- Nav -->
 
@@ -36,17 +36,35 @@
         </div>
 
         <!-- Gigantic Heading -->
-        <section class="wrapper style2">
+        <section id="content-directory" class="wrapper style2">
             <div class="container">
                 <header class="major">
-                    <h2>Who are the team 1?</h2>
-                    <ul>
+                    <input type="text" id="filterInput" onkeyup="filterMembers()" placeholder="Search for names..">
+                    <h1>Members</h1>
+                    <table id="member-table">
+                        <tr class="header-table">
+                            <th style="width:20%;">Image</th>
+                            <th style="width:20%;">Name</th>
+                            <th style="width:40%;">Confluence</th>
+                        </tr>
                         <% teamMembers.forEach(function(member) { %>
-                        <li>
-                            <%= member.uid %> -
-                            <%= member.name %>
-                        </li>
+                        <tr>
+                            <td>
+                                <img class="prof-img" src="<%= member.img %>" alt="">
+                            </td>
+                            <td>
+                                <%= member.name %>
+                            </td>
+                            <td>
+                                <a href="<%= member.confluence_url %>">Confluence</a>
+                            </td>
+
+                        </tr>
                         <% }); %>
+
+                    </table>
+                    <ul>
+
 
                     </ul>
                 </header>
@@ -57,11 +75,10 @@
         <div id="footer">
             <!-- Icons -->
             <ul class="icons">
-                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                <li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-                <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                <li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+                <li><a href="https://twitter.com/Marcore_JS" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://github.com/g-tecio" class="icon fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="https://www.linkedin.com/in/marco-antonio-mercado-lugo-84bb4211b/" class="icon fa-linkedin"><span
+                            class="label">LinkedIn</span></a></li>
             </ul>
 
             <!-- Copyright -->
@@ -83,6 +100,7 @@
     <script src="/js/util.js"></script>
     <!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
     <script src="/js/main.js"></script>
+    <script src="/js/script.js"></script>
 
 </body>
 
