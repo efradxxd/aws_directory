@@ -6,7 +6,7 @@ aws.config.update({ region: 'us-east-1' });
 var app = express();
 var request = require('request');
 var teamMembers;
-var urlAPI = 'https://5kjpo28p8l.execute-api.us-east-2.amazonaws.com/dev/CloudTeam';
+var urlAPI = 'https://uhmoxvk5s0.execute-api.us-east-1.amazonaws.com/dev/DirectoryFunc';
 
 app.set('view engine', 'ejs');
 request.get(urlAPI, (err, res, body) => {
