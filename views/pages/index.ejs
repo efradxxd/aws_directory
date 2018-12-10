@@ -50,13 +50,13 @@
                         <% teamMembers.forEach(function(member) { %>
                         <tr>
                             <td>
-                                <img class="prof-img" src="<%= member.Img %>" alt="">
+                                <img class="prof-img" src="<%= member.img %>" alt="">
                             </td>
                             <td>
-                                <%= member.FirstName %> <%= member.LastName %>
+                                <%= member.name %> 
                             </td>
                             <td>
-                                <a href="<%= member.Profile %>">Go to profile</a>
+                                <a href="<%= member.confluence_url %>">Go to profile</a>
                             </td>
 
                         </tr>
